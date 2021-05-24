@@ -26,8 +26,8 @@ Public Class Form1
 
     End Function
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim url = "https://mtgmelee.com/Decklist/View/140939"
-        'url = TextBox1.Text
+        'Dim url = "https://mtgmelee.com/Decklist/View/140939"
+        url = TextBox1.Text
 
         Dim t = ReadWeb(url)
         Dim doc As HtmlDocument = GetHtmlDocument(t)
